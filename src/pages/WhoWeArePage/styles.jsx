@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import background from "../../assets/main-background.svg";
 
 export const MainContainer = styled.div`
   height: 1450px;
@@ -58,6 +59,42 @@ export const FirstSection = styled.section`
       top: 909px;
       border-radius: 50%;
       background-color: #20b1c1;
+    }
+  }
+`;
+
+export const SecondSection = styled.section`
+  height: 230px;
+  background-image: url(${background});
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #525252;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  div {
+    height: 150px;
+
+    h2 {
+      font-family: Poppins;
+      font-size: 32px;
+      font-weight: 900;
+      line-height: 48px;
+      text-align: center;
+      color: #fe6c05;
+    }
+
+    p {
+      font-family: Poppins;
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 27px;
+      text-align: center;
+      color: #f5f5f5cc;
+      padding: 20px;
+      width: 25vw;
     }
   }
 `;

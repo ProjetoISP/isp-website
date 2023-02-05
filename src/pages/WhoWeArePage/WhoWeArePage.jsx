@@ -1,5 +1,5 @@
 import React from "react";
-import { MainContainer, FirstSection } from "./styles";
+import { MainContainer, FirstSection, SecondSection } from "./styles";
 
 export const WhoWeArePage = () => {
   return (
@@ -24,6 +24,28 @@ export const WhoWeArePage = () => {
           </div>
         </div>
       </FirstSection>
+      <SecondSection>
+        <div>
+          <h2>Missão</h2>
+          <p> Transformar o meio social das comunidades através de ações </p>
+        </div>
+        <div>
+          <h2>Visão</h2>
+          <p>
+            {" "}
+            Ser uma organização social de referência na co-criação de
+            estratégias{" "}
+          </p>
+        </div>
+        <div>
+          <h2> Valores</h2>
+          <p>
+            {" "}
+            Acreditamos e Impulsionamos o individuo a alcançar seus sonhos e
+            objetivos
+          </p>
+        </div>
+      </SecondSection>
     </MainContainer>
   );
 };
