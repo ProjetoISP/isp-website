@@ -1,8 +1,8 @@
 import { useState } from "react";
 import GlobalStyle from "./styles/global";
 import { Header } from "./components/Header/Header";
-import { Carousel } from "./pages/Carousel/Carousel";
-
+import { PresentationPage } from "./pages/PresentationPage/PresentationPage";
+import { WhoWeArePage } from "./pages/WhoWeArePage/WhoWeArePage";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -10,7 +10,8 @@ function App() {
     <div>
       <GlobalStyle />
       <Header />
-      <Carousel />
+      <PresentationPage />
+      <WhoWeArePage />
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import { Button } from "../../components/Button/Button";
 import { ContainerCarousel } from "./styles";
 
-export const Carousel = () => {
+export const PresentationPage = () => {
   return (
     <ContainerCarousel>
       <section>
