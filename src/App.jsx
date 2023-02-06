@@ -1,8 +1,9 @@
 import { useState } from "react";
 import GlobalStyle from "./styles/global";
 import { Header } from "./components/Header/Header";
-import { PresentationPage } from "./pages/PresentationPage/PresentationPage";
+import Carousel_function from "./components/carousel__Primeiro";
 import { WhoWeArePage } from "./pages/WhoWeArePage/WhoWeArePage";
+
 function App() {
   const [count, setCount] = useState(0);
 
@@ -10,8 +11,10 @@ function App() {
     <div>
       <GlobalStyle />
       <Header />
-      <PresentationPage />
-      <WhoWeArePage />
+      <Carousel_function/>
+      <WhoWeArePage/>
+      
+  
     </div>
   );
 }
