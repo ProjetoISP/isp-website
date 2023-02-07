@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Swipe from "react-easy-swipe";
-import "./styles/index.css";
+import "./stylesCarousel/index.css";
+
 
 function Carousel({
   data,

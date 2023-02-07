@@ -32,6 +32,7 @@ export const HeaderContainer = styled.div`
       padding: 5px;
       padding-right: 15px;
       color: #525252;
+      
     }
   }
 
