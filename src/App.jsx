@@ -3,7 +3,8 @@ import GlobalStyle from "./styles/global";
 import { Header } from "./components/Header/Header";
 
 import { WhoWeArePage } from "./pages/WhoWeArePage/WhoWeArePage";
-import Carousel_function from "./components/Carousel/carousel__Primeiro";
+import { PresentationPage, PresentationPage__carousel } from "./pages/PresentationPage/PresentationPage";
+
 
 function App() {
   const [count, setCount] = useState(0);
@@ -11,10 +12,11 @@ function App() {
   return (
     <div>
       <GlobalStyle/>
-      <Header />
-      <Carousel_function/>
+      <Header /> 
+      <PresentationPage__carousel/>
+
+
       <WhoWeArePage/>
-      
   
     </div>
   );

@@ -20,11 +20,11 @@ export const HeaderContainer = styled.div`
   }
 
   nav {
-    width: 30%;
+    width: 52%;
     height: 104px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content:space-around;
 
     a {
       height: 25px;
@@ -32,6 +32,9 @@ export const HeaderContainer = styled.div`
       padding: 5px;
       padding-right: 15px;
       color: #525252;
+      font-size: 20px;
+      white-space: nowrap
+      
       
     }
   }
@@ -39,4 +42,18 @@ export const HeaderContainer = styled.div`
   button {
     background-color: green;
   }
+
+  @media (max-width: 900px){
+    
+
+    figure img {
+      height: 77px;
+      width:98px;
+    }
+     nav a{
+      font-size: 15px;
+    }
+
+  }
 `;
+

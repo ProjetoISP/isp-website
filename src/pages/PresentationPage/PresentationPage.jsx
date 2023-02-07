@@ -1,17 +1,26 @@
 import { Button } from "../../components/Button/Button";
+import Carousel_function from "../../components/Carousel/carousel__Primeiro";
 import { ContainerCarousel } from "./styles";
 
 export const PresentationPage = () => {
   return (
+<>
+
+    
     <ContainerCarousel>
-      <section>
-        <h2>PROJETO CONSTRUINDO O FUTURO</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, unde
-          iure facere
-        </p>
+   
         <Button> Saiba Mais</Button>
-      </section>
+
     </ContainerCarousel>
+    </>
   );
 };
+
+export const PresentationPage__carousel = () => {
+  return(
+<>
+      <Carousel_function/>
+
+</>
+  )
+}
