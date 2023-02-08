@@ -1,14 +1,18 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
-  width: 80vw
+  width: 100vw;
   height: 104px;
   background-color: #ffffff;
-  display: flex;
+  display:flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin: 10px auto;
-
+  
+ 
+  .botaoMobile{
+  display: none;
+}
   figure {
     display: flex;
     justify-content: center;
@@ -38,10 +42,14 @@ export const HeaderContainer = styled.div`
       
     }
   }
-
-  button {
-    background-color: green;
+  Button{
+    left: 100px;
   }
+
+
+  .botaoMobile{
+  display: none;
+}
 
   @media (max-width: 900px){
     
@@ -53,7 +61,15 @@ export const HeaderContainer = styled.div`
      nav a{
       font-size: 15px;
     }
-
+  
   }
+ @media (max-width: 720px){
+nav {
+  display: none;
+}
+.botaoMobile{
+  display: block;
+}
+}
 `;
 

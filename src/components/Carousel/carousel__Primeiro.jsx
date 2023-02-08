@@ -2,6 +2,7 @@
 import foto1 from './img1.jpg'
 import foto2 from './img2.jpg'
 import Carousel from "./Carousel";
+import './StylesCarousel/index.css'
 
 
 
