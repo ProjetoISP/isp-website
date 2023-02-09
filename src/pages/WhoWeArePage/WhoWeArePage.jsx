@@ -1,9 +1,17 @@
 import React from "react";
-import { MainContainer, FirstSection, SecondSection } from "./styles";
+import {
+  MainContainer,
+  FirstSection,
+  SecondSection,
+  ThirdSection,
+} from "./styles";
+
+import image from "../../assets/image6.png";
+import { Button } from "../../components/Button/Button";
 
 export const WhoWeArePage = () => {
   return (
-    <MainContainer>
+    <MainContainer id="whoWeAre">
       <FirstSection>
         <div className="video-frame">
           <video></video>
@@ -46,6 +54,21 @@ export const WhoWeArePage = () => {
           </p>
         </div>
       </SecondSection>
+      <ThirdSection>
+        <div>
+          <section>
+            <Button> JUNTE-SE A NÓS</Button>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
+              quo porro asperiores voluptatum a modi doloribus necessitatibus
+              eligendi laboriosam, deserunt incidunt! Ducimus dolor molestiae
+              amet dolores odio, aperiam hic voluptatum!
+            </p>
+            <Button> Doe agora </Button>
+          </section>
+        </div>
+        <img src={image}></img>
+      </ThirdSection>
     </MainContainer>
   );
 };
