@@ -1,12 +1,13 @@
 import styled from "styled-components";
 import background from "../../assets/main-background.svg";
+import backgroundThirdSection from "../../assets/rectangle.png";
 
 export const MainContainer = styled.div`
   height: 1450px;
 `;
 
 export const FirstSection = styled.section`
-position: relative;
+  position: relative;
 
   height: 553px;
   background: linear-gradient(
@@ -98,5 +99,31 @@ export const SecondSection = styled.section`
       padding: 20px;
       width: 25vw;
     }
+  }
+`;
+
+export const ThirdSection = styled.section`
+  display: flex;
+  align-items: center;
+  height: 500px;
+  justify-content: space-around;
+  width: 70vw;
+  margin: auto;
+
+  div {
+    width: 650px;
+    background-color: #00cfe6;
+  }
+  section {
+    background-image: url(${backgroundThirdSection});
+    height: 343px;
+    width: 635px;
+    border-radius: 3px;
+  }
+
+  img {
+    height: 343px;
+    width: 450px;
+    border-radius: 3px;
   }
 `;

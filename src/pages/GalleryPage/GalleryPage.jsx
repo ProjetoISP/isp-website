@@ -3,8 +3,7 @@ import { Partners } from "../../components/Partners/Partners";
 
 export const GalleryPage = () => {
   return (
-    <div>
-      Galeria
+    <div id="gallery">
       <Gallery />
       <Partners />
     </div>
