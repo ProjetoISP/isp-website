@@ -1,14 +1,18 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
-  width: 80vw
+  width: 100vw;
   height: 104px;
   background-color: #ffffff;
-  display: flex;
+  display:flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin: 10px auto;
-
+  
+ 
+  .botaoMobile{
+  display: none;
+}
   figure {
     display: flex;
     justify-content: center;
@@ -20,11 +24,11 @@ export const HeaderContainer = styled.div`
   }
 
   nav {
-    width: 30%;
+    width: 52%;
     height: 104px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content:space-around;
 
     a {
       height: 25px;
@@ -32,10 +36,40 @@ export const HeaderContainer = styled.div`
       padding: 5px;
       padding-right: 15px;
       color: #525252;
+      font-size: 20px;
+      white-space: nowrap
+      
+      
     }
   }
-
-  button {
-    background-color: green;
+  Button{
+    left: 100px;
   }
+
+
+  .botaoMobile{
+  display: none;
+}
+
+  @media (max-width: 900px){
+    
+
+    figure img {
+      height: 77px;
+      width:98px;
+    }
+     nav a{
+      font-size: 15px;
+    }
+  
+  }
+ @media (max-width: 720px){
+nav {
+  display: none;
+}
+.botaoMobile{
+  display: block;
+}
+}
 `;
+

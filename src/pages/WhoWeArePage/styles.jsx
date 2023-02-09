@@ -6,6 +6,8 @@ export const MainContainer = styled.div`
 `;
 
 export const FirstSection = styled.section`
+position: relative;
+
   height: 553px;
   background: linear-gradient(
     180deg,
