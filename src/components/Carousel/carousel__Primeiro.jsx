@@ -29,40 +29,31 @@ export const CarouselContainer = () => {
     fontSize: "15px",
     top: "20px",
   };
-  const slideNumberStyle = {};
 
   return (
-    <div className="App">
-      <section></section>
-
-      <div style={{ textAlign: "center" }}>
-        <div style={{}}>
-          <Carousel
-            data={data}
-            time={2000}
-            width="1440px"
-            height="500px"
-            captionStyle={captionStyle}
-            radius="10px"
-            captionPosition="bottom"
-            automatic={true}
-            dots={true}
-            pauseIconColor="white"
-            pauseIconSize="40px"
-            slideBackgroundColor="darkgrey"
-            slideImageFit="cover"
-            showNavBtn={true}
-            style={{
-              textAlign: "center",
-              maxWidth: "1440px",
-            }}
-          />
-        </div>
+    <div style={{ textAlign: "center" }}>
+      <div style={{}}>
+        <Carousel
+          data={data}
+          time={2000}
+          width="1440px"
+          height="500px"
+          captionStyle={captionStyle}
+          radius="10px"
+          captionPosition="bottom"
+          automatic={true}
+          dots={true}
+          pauseIconColor="white"
+          pauseIconSize="40px"
+          slideBackgroundColor="darkgrey"
+          slideImageFit="cover"
+          showNavBtn={true}
+          style={{
+            textAlign: "center",
+            maxWidth: "1440px",
+          }}
+        />
       </div>
-
-      <section></section>
-
-      <section></section>
     </div>
   );
 };
