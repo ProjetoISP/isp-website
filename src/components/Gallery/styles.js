@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ProjectContainer = styled.div`
+export const GalleryContainer = styled.div`
   height: 700px;
   display: flex;
   flex-direction: column;
