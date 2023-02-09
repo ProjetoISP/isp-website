@@ -3,7 +3,7 @@ import { MainContainer, FirstSection, SecondSection } from "./styles";
 
 export const WhoWeArePage = () => {
   return (
-    <MainContainer>
+    <MainContainer id="whoWeAre">
       <FirstSection>
         <div className="video-frame">
           <video></video>
