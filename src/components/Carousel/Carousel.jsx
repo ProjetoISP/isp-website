@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Swipe from "react-easy-swipe";
 import "./StylesCarousel/index.css";
 
-function Carousel({
+export const Carousel = ({
   data,
   time,
   width,
@@ -22,7 +22,7 @@ function Carousel({
   thumbnails,
   thumbnailWidth,
   showNavBtn = true,
-}) {
+}) => {
   //Initialize States
   const [slide, setSlide] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
@@ -260,6 +260,4 @@ function Carousel({
       )}
     </div>
   );
-}
-
-export default Carousel;
+};

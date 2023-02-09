@@ -1,24 +1,22 @@
-import { useState } from "react";
 import GlobalStyle from "./styles/global";
 import { Header } from "./components/Header/Header";
-
+import { Footer } from "./components/Footer/Footer";
 import { WhoWeArePage } from "./pages/WhoWeArePage/WhoWeArePage";
-import { PresentationPage, PresentationPage__carousel } from "./pages/PresentationPage/PresentationPage";
-
+import { PresentationPage } from "./pages/PresentationPage/PresentationPage";
+import { GalleryPage } from "./pages/GalleryPage/GalleryPage";
+import { ProjectsPage } from "./pages/ProjectsPage/ProjectsPage";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div>
-      <GlobalStyle/>
-      <Header /> 
-      <PresentationPage__carousel/>
-
-
-      <WhoWeArePage/>
-  
-    </div>
+    <>
+      <GlobalStyle />
+      <Header />
+      <PresentationPage />
+      <WhoWeArePage />
+      <ProjectsPage />
+      <GalleryPage />
+      <Footer />
+    </>
   );
 }
 

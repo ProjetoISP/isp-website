@@ -1,15 +1,9 @@
+import foto1 from "./img1.jpg";
+import foto2 from "./img2.jpg";
+import { Carousel } from "./Carousel";
+import "./StylesCarousel/index.css";
 
-import foto1 from './img1.jpg'
-import foto2 from './img2.jpg'
-import Carousel from "./Carousel";
-import './StylesCarousel/index.css'
-
-
-
-
-function Carousel_function() {
-
-
+export const CarouselContainer = () => {
   const data = [
     {
       image: foto1,
@@ -18,8 +12,6 @@ function Carousel_function() {
                 <p class="paragrafo__banner">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel est tortor.
       </p>
       </div>`,
-
-
     },
     {
       image: foto2,
@@ -31,40 +23,20 @@ function Carousel_function() {
       </p>
       </div>`,
     },
-
   ];
 
   const captionStyle = {
     fontSize: "15px",
     top: "20px",
-
   };
-  const slideNumberStyle = {
-
-
-
-  };
-
-
-
-
+  const slideNumberStyle = {};
 
   return (
     <div className="App">
-      <section>
-
-
-      </section >
-
+      <section></section>
 
       <div style={{ textAlign: "center" }}>
-        <div
-          style={{
-
-          }}
-        >
-
-
+        <div style={{}}>
           <Carousel
             data={data}
             time={2000}
@@ -72,7 +44,6 @@ function Carousel_function() {
             height="500px"
             captionStyle={captionStyle}
             radius="10px"
-
             captionPosition="bottom"
             automatic={true}
             dots={true}
@@ -80,28 +51,18 @@ function Carousel_function() {
             pauseIconSize="40px"
             slideBackgroundColor="darkgrey"
             slideImageFit="cover"
-
             showNavBtn={true}
             style={{
-
               textAlign: "center",
               maxWidth: "1440px",
-
             }}
           />
-        </div >
-      </div >
+        </div>
+      </div>
 
-      <section>
+      <section></section>
 
-      </section>
-
-      <section>
-
-      </section>
-    </div >
+      <section></section>
+    </div>
   );
-}
-
-export default Carousel_function;
-
+};
