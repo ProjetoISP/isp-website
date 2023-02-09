@@ -1,9 +1,11 @@
+import { Gallery } from "../../components/Gallery/Gallery";
 import { Partners } from "../../components/Partners/Partners";
 
 export const GalleryPage = () => {
   return (
     <div>
-      GalleryPage
+      Galeria
+      <Gallery />
       <Partners />
     </div>
   );
