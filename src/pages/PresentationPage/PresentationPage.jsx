@@ -1,5 +1,4 @@
-import { Button } from "../../components/Button/Button";
-import { CarouselContainer } from "../../components/Carousel/carousel__Primeiro";
+import { CarouselContainer } from "../../components/Carousel/CarouselContainer";
 
 export const PresentationPage = () => {
   return (

@@ -1,28 +1,31 @@
 import React, { useEffect, useState } from "react";
 import Swipe from "react-easy-swipe";
 import "./StylesCarousel/index.css";
+import { Button } from "../Button/Button";
 
-export const Carousel = ({
-  data,
-  time,
-  width,
-  height,
-  captionStyle,
-  slideNumberStyle,
-  radius,
-  slideNumber,
-  style,
-  captionPosition,
-  dots,
-  automatic,
-  pauseIconColor,
-  pauseIconSize,
-  slideBackgroundColor,
-  slideImageFit,
-  thumbnails,
-  thumbnailWidth,
-  showNavBtn = true,
-}) => {
+export const Carousel = ({ CarouselData }) => {
+  const {
+    data,
+    time,
+    width,
+    height,
+    captionStyle,
+    slideNumberStyle,
+    radius,
+    slideNumber,
+    style,
+    captionPosition,
+    dots,
+    automatic,
+    pauseIconColor,
+    pauseIconSize,
+    slideBackgroundColor,
+    slideImageFit,
+    thumbnails,
+    thumbnailWidth,
+    showNavBtn,
+  } = CarouselData;
+
   //Initialize States
   const [slide, setSlide] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
@@ -171,6 +174,7 @@ export const Carousel = ({
                       objectFit: slideImageFit ? slideImageFit : "cover",
                     }}
                   />
+
                   {isPaused && (
                     <div
                       className="pause-icon pause"
@@ -234,6 +238,7 @@ export const Carousel = ({
           </div>
         </Swipe>
       </div>
+
       {thumbnails && (
         <div
           className="thumbnails"

@@ -1,6 +1,7 @@
 import foto1 from "./img1.jpg";
 import foto2 from "./img2.jpg";
 import { Carousel } from "./Carousel";
+
 import "./StylesCarousel/index.css";
 
 export const CarouselContainer = () => {
@@ -30,30 +31,31 @@ export const CarouselContainer = () => {
     top: "20px",
   };
 
+  const CarouselData = {
+    data: data,
+    time: 2000,
+    width: "2440px",
+    width: "2440px",
+    height: "500px",
+    captionStyle: captionStyle,
+    radius: "10px",
+    captionPosition: "bottom",
+    automatic: true,
+    dots: true,
+    pauseIconColor: "white",
+    pauseIconSize: "40px",
+    slideBackgroundColor: "darkgrey",
+    slideImageFit: "cover",
+    showNavBtn: true,
+    style: {
+      textAlign: "center",
+      maxWidth: "1440px",
+    },
+  };
+
   return (
     <div style={{ textAlign: "center" }}>
-      <div style={{}}>
-        <Carousel
-          data={data}
-          time={2000}
-          width="1440px"
-          height="500px"
-          captionStyle={captionStyle}
-          radius="10px"
-          captionPosition="bottom"
-          automatic={true}
-          dots={true}
-          pauseIconColor="white"
-          pauseIconSize="40px"
-          slideBackgroundColor="darkgrey"
-          slideImageFit="cover"
-          showNavBtn={true}
-          style={{
-            textAlign: "center",
-            maxWidth: "1440px",
-          }}
-        />
-      </div>
+      <Carousel CarouselData={CarouselData} />
     </div>
   );
 };
