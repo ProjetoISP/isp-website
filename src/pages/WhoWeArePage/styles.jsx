@@ -7,62 +7,196 @@ export const MainContainer = styled.div`
 `;
 
 export const FirstSection = styled.section`
-  position: relative;
-
-  height: 553px;
-  background: linear-gradient(
-    180deg,
-    #63b2bb 34.11%,
-    rgba(224, 125, 37, 0.58) 100%
-  );
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-
-  .video-frame {
-    background-color: black;
-    height: 466px;
-    width: 35vw;
-    border-radius: 3px;
+  .section__empresa {
+      background: linear-gradient(180deg, #63B2BB 34.11%, rgba(224, 125, 37, 0.58) 100%);
+      height: 815px;
+      margin-top: 50px;
   }
 
-  div + div {
-    height: 90%;
-    width: 50vw;
-    h2 {
-      padding: 10px;
-      border-left: 7px solid #525252;
-      height: 48px;
-    }
-
-    p {
-      height: 140px;
-      width: 598px;
-      font-family: Poppins;
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 27px;
-      color: #ffffff;
-      text-align: center;
-      margin: 20px;
-    }
-  }
-
-  .span-container {
-    margin: auto;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-
-    span {
+  iframe {
       display: block;
-      height: 187px;
-      width: 187px;
-      left: 759px;
-      top: 909px;
+      margin: 15px auto 10px auto;
+
+      height: 220px;
+      width: 95%;
+  }
+
+  .section__quem {
+      margin: auto auto 35px auto;
+      padding-top: 20px;
+
+      width: 80%;
+  }
+
+  .titulo__empresa {
+      border-left: 3px solid #525252;
+
+      color: #525252;
+      font-family: 'Roboto';
+      font-size: 28px;
+      font-weight: 800;
+      text-align: left;
+      text-transform: uppercase;
+
+      padding: 5px 0 0 10px;
+
+      margin-bottom: 30px;
+
+      height: 38px;
+  }
+
+  .paragrafo__empresa {
+      position: relative;
+      bottom: 15px;
+      color: #FFFFFF;
+      font-family: 'Poppins';
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 21px;
+      text-align: left;
+  }
+
+  .empresa__info {
+      margin: auto;
+      width: 80%;
+  }
+
+  .circle__info {
+      background: #20B1C1;
       border-radius: 50%;
-      background-color: #20b1c1;
-    }
+
+      color: #F5F5F5;
+      font-family: 'Roboto';
+      font-size: 18px;
+      font-weight: 600;
+      text-align: center;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      margin: auto;
+      margin-bottom: 25px;
+
+      width: 121px;
+      height: 121px;
+  }
+
+  .circle__paragrafo--wrap {
+      word-wrap: wrap;
+
+      width: 70%;
+  }
+
+  .cirlce--wrap {
+      word-break: break-word;
+  }
+
+  @media (min-width: 640px) {
+      .section__empresa {
+          height: 580px;
+      }
+
+      iframe {
+          margin: 20px auto 15px auto;
+
+          height: 380px;
+          width: 95%;
+      }
+
+      .section__quem {
+          margin-bottom: 30px;
+          padding-top: 50px;
+
+          width: 70%;
+      }
+
+      .titulo__empresa {
+          border-left: 4px solid #525252;
+
+          font-size: 25px;
+
+          height: 35px;
+          margin-bottom: 40px;
+      }
+
+      .paragrafo__empresa {
+          font-size: 18px;
+          line-height: 27px;
+      }
+
+      .empresa__info {
+          display: flex;
+          width: 80%;
+      }
+  }
+
+
+  @media (min-width: 1200px) {
+      .hero__background {
+          background: linear-gradient(180deg, #63B2BB 34.11%, rgba(224, 125, 37, 0.58) 100%);
+          height: 590px;
+          width: 100%;
+      }
+
+      .hero {
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: space-around;
+
+          margin: auto;
+
+          height: 610px;
+          width: 90%;
+      }
+
+      .section__empresa {
+          background: none;
+          margin-top: 30px;
+          height: 510px;
+          width: 560px;
+      }
+
+      iframe {
+          height: 510px;
+
+          margin: 30px 0 0 0;
+          width: 640px;
+      }
+
+      .section__quem {
+          margin-bottom: 30px;
+          padding-top: 0px;
+
+          width: 90%;
+      }
+
+      .titulo__empresa {
+          border-left: 5px solid #525252;
+          font-size: 28px;
+
+          margin-bottom: 25px;
+          padding-top: 10px;
+
+          height: 48px;
+      }
+
+      .paragrafo__empresa {
+          font-size: 18px;
+          text-align: center;
+      }
+
+      .empresa__info {
+          display: flex;
+          margin: auto;
+          width: 95%;
+      }
+
+      .circle__info {
+          font-size: 24px;
+          height: 160px;
+          width: 160px;
+      }
   }
 `;
 
