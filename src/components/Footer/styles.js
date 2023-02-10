@@ -18,12 +18,79 @@ export const FooterContainer = styled.div`
     line-height: 63px;
     text-align: left;
     color: #ffffff;
-    padding-top: 30px;
+    padding: 20px;
   }
 
   .flex {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    height: 80%;
+    padding: 10px;
+  }
+  p {
+    width: 30%;
+    margin: 20px auto;
+  }
+`;
+
+export const FormContainer = styled.div`
+  height: 95%;
+  min-width: 450px;
+  width: 45%;
+
+  p {
+    height: 28px;
+    width: 189px;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    margin: 20px auto;
+    color: #1e1e1e;
+  }
+`;
+
+export const MapContainer = styled.div`
+  height: 70%;
+  min-width: 450px;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+
+  img {
+    height: 168px;
+    width: 390px;
+    margin: auto;
+  }
+
+  p {
+    width: 62%;
+    margin: 10px auto;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: #1e1e1e;
+  }
+`;
+
+export const IconContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 42px;
+  width: 62%;
+  margin: auto;
+
+  img {
+    height: 40px;
+    width: 54px;
+    left: 786px;
+    margin: 10px;
   }
 `;

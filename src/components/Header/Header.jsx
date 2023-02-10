@@ -5,7 +5,7 @@ import { HeaderContainer } from "./styles";
 
 export const Header = () => {
   return (
-    <HeaderContainer id="home">
+    <HeaderContainer>
       <figure>
         <img src={ispLogo} alt="logo isp" />
       </figure>
