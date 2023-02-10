@@ -1,6 +1,23 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
+
+  width: 100vw;
+  height: 104px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 10px auto;
+
+  .botaoMobile {
+    display: none;
+  }
+
+  figure {
+    display: flex;
+    justify-content: center;
+
   background-color: white;
   display: flex;
   align-items: center;
@@ -9,6 +26,7 @@ export const HeaderContainer = styled.div`
   left: 0;
   z-index: 1000;
   height: 100px;
+
 
   img {
     margin-top: 5px;
@@ -31,7 +49,10 @@ export const HeaderContainer = styled.div`
     background-color: #ffffff;
     display: flex;
     align-items: center;
+
+
     justify-content: space-evenly;
+
 
     .botaoMobile {
       display: none;
@@ -51,6 +72,36 @@ export const HeaderContainer = styled.div`
     nav a {
       border-right: 2px solid #d9d9d9;
       color: #525252;
+
+      font-size: 20px;
+      white-space: nowrap;
+    }
+  }
+  Button {
+    left: 100px;
+  }
+  .botaoMobile {
+    display: none;
+  }
+
+  @media (max-width: 900px) {
+    figure img {
+      height: 77px;
+      width: 98px;
+    }
+    nav a {
+      font-size: 15px;
+    }
+  }
+  @media (max-width: 720px) {
+    nav {
+      display: none;
+    }
+    .botaoMobile {
+      display: block;
+    }
+  }
+
       font-size: 15px;
 
       margin: 0;
@@ -90,4 +141,5 @@ export const HeaderContainer = styled.div`
       padding: 0 15px 0 15px;
     }
   }
+
 `;
