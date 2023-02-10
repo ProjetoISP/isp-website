@@ -4,15 +4,15 @@ export const HeaderContainer = styled.div`
   width: 100vw;
   height: 104px;
   background-color: #ffffff;
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: space-evenly;
   margin: 10px auto;
-  
- 
-  .botaoMobile{
-  display: none;
-}
+
+  .botaoMobile {
+    display: none;
+  }
+
   figure {
     display: flex;
     justify-content: center;
@@ -28,7 +28,7 @@ export const HeaderContainer = styled.div`
     height: 104px;
     display: flex;
     align-items: center;
-    justify-content:space-around;
+    justify-content: space-around;
 
     a {
       height: 25px;
@@ -37,39 +37,31 @@ export const HeaderContainer = styled.div`
       padding-right: 15px;
       color: #525252;
       font-size: 20px;
-      white-space: nowrap
-      
-      
+      white-space: nowrap;
     }
   }
-  Button{
+  Button {
     left: 100px;
   }
+  .botaoMobile {
+    display: none;
+  }
 
-
-  .botaoMobile{
-  display: none;
-}
-
-  @media (max-width: 900px){
-    
-
+  @media (max-width: 900px) {
     figure img {
       height: 77px;
-      width:98px;
+      width: 98px;
     }
-     nav a{
+    nav a {
       font-size: 15px;
     }
-  
   }
- @media (max-width: 720px){
-nav {
-  display: none;
-}
-.botaoMobile{
-  display: block;
-}
-}
+  @media (max-width: 720px) {
+    nav {
+      display: none;
+    }
+    .botaoMobile {
+      display: block;
+    }
+  }
 `;
-
