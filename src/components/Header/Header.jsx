@@ -11,11 +11,13 @@ export const Header = () => {
       </figure>
 
       <nav>
+
         <a href="#home">HOME</a>
         <a href="#whoWeAre">QUEM SOMOS</a>
         <a href="#project">PROJETOS</a>
         <a href="#gallery">GALERIA</a>
         <a href="#contact">CONTATO</a>
+
       </nav>
       <DropdownMenu />
       <Button> DOE AGORA </Button>
