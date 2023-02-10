@@ -4,24 +4,22 @@ import DropdownMenu from "../Button/ButtonMobile/ButtonMobile";
 import { HeaderContainer } from "./styles";
 
 export const Header = () => {
-
-
-  
   return (
-    <HeaderContainer>
-      
+    <HeaderContainer id="home">
       <figure>
         <img src={ispLogo} alt="logo isp" />
       </figure>
 
       <nav>
-        <a href="">Home</a>
-        <a href="">Quem Somos</a>
-        <a href="">Projetos</a>
-        <a href="">Galeria</a>
-        <a href="">Contato</a>
+
+        <a href="#home">HOME</a>
+        <a href="#whoWeAre">QUEM SOMOS</a>
+        <a href="#project">PROJETOS</a>
+        <a href="#gallery">GALERIA</a>
+        <a href="#contact">CONTATO</a>
+
       </nav>
-      <DropdownMenu/>
+      <DropdownMenu />
       <Button> DOE AGORA </Button>
     </HeaderContainer>
   );

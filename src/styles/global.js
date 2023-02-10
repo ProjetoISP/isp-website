@@ -10,5 +10,12 @@ const GlobalStyle = createGlobalStyle`
     font-family: Roboto;
 }
 
+:root{
+    --color-primary:
+
+    --color-sucess:
+
+}
+
 `;
 export default GlobalStyle;

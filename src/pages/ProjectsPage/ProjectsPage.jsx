@@ -1,5 +1,9 @@
-import React from "react";
+import { ProjectContainer } from "./styles.js";
 
 export const ProjectsPage = () => {
-  return <div>ProjectsPage</div>;
+  return (
+    <ProjectContainer id="project">
+      <h2> Projetos </h2>{" "}
+    </ProjectContainer>
+  );
 };
