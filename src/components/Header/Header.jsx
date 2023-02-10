@@ -15,11 +15,11 @@ export const Header = () => {
       </figure>
 
       <nav>
-        <a href="">HOME</a>
-        <a href="">QUEM SOMOS</a>
-        <a href="">PROJETOS</a>
-        <a href="">GALERIA</a>
-        <a href="">CONTATO</a>
+        <a href="">Home</a>
+        <a href="">Quem Somos</a>
+        <a href="">Projetos</a>
+        <a href="">Galeria</a>
+        <a href="">Contato</a>
       </nav>
       <DropdownMenu/>
       <Button> DOE AGORA </Button>
