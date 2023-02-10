@@ -18,12 +18,38 @@ export const FooterContainer = styled.div`
     line-height: 63px;
     text-align: left;
     color: #ffffff;
-    padding-top: 30px;
   }
 
   .flex {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    height: 80%;
   }
+`;
+
+export const FormContainer = styled.div`
+  height: 95%;
+  min-width: 450px;
+  width: 45%;
+
+  p {
+    height: 28px;
+    width: 189px;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    margin: 20px auto;
+  }
+`;
+
+export const MapContainer = styled.div`
+  height: 95%;
+  min-width: 450px;
+  width: 45%;
+  background-color: blue;
 `;
