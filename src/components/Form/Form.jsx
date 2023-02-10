@@ -34,7 +34,7 @@ export const Form = () => {
         <input {...register("email")} />
         <p>{errors.email?.message}</p>
       </div>
-      <div className="flex-column">
+      <div className="flex-column-label">
         <label>Mensagem:</label>
         <textarea {...register("message")} />
         <p>{errors.message?.message}</p>

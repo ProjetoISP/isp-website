@@ -9,7 +9,14 @@ export const FormStyles = styled.form`
     flex-direction: column;
     width: 85%;
     margin: auto;
-    height: 22%;
+    height: 80px;
+  }
+  .flex-column-label {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: auto;
+    height: 150px;
   }
 
   label {
@@ -27,17 +34,17 @@ export const FormStyles = styled.form`
     height: 60px;
     width: 90%;
     margin: auto;
-    padding: 8px;
+    padding: 12px;
     padding-left: 10px;
     border-radius: 5px;
     border: none;
   }
 
   textarea {
-    height: 100px;
+    height: 80px;
     width: 90%;
     margin: auto;
-    padding: 30px;
+    padding: 40px;
     padding-left: 10px;
     border-radius: 5px;
     overflow: hidden;
@@ -52,6 +59,6 @@ export const FormStyles = styled.form`
   }
 
   button {
-    margin: 10px auto;
+    margin: auto;
   }
 `;
