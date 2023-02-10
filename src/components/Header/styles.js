@@ -1,23 +1,6 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
-
-  width: 100vw;
-  height: 104px;
-  background-color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  margin: 10px auto;
-
-  .botaoMobile {
-    display: none;
-  }
-
-  figure {
-    display: flex;
-    justify-content: center;
-
   background-color: white;
   display: flex;
   align-items: center;
@@ -26,14 +9,11 @@ export const HeaderContainer = styled.div`
   left: 0;
   z-index: 1000;
   height: 100px;
-
-
   img {
     margin-top: 5px;
     width: 113px;
     height: 90px;
   }
-
   nav a {
     color: white;
     font-size: 26px;
@@ -42,98 +22,53 @@ export const HeaderContainer = styled.div`
     margin-bottom: 10px;
     height: 40px;
   }
-
   @media (min-width: 800px) {
     width: 100vw;
     height: 80px;
     background-color: #ffffff;
     display: flex;
     align-items: center;
-
-
     justify-content: space-evenly;
-
-
     .botaoMobile {
       display: none;
     }
-
     figure img {
       height: 77px;
       width: 100px;
     }
-
     nav {
       display: flex;
       align-items: center;
       justify-content: space-around;
     }
-
     nav a {
       border-right: 2px solid #d9d9d9;
       color: #525252;
-
-      font-size: 20px;
-      white-space: nowrap;
-    }
-  }
-  Button {
-    left: 100px;
-  }
-  .botaoMobile {
-    display: none;
-  }
-
-  @media (max-width: 900px) {
-    figure img {
-      height: 77px;
-      width: 98px;
-    }
-    nav a {
       font-size: 15px;
-    }
-  }
-  @media (max-width: 720px) {
-    nav {
-      display: none;
-    }
-    .botaoMobile {
-      display: block;
-    }
-  }
-
-      font-size: 15px;
-
       margin: 0;
       padding: 0;
       padding: 0 12px 0 12px;
-
       height: 20px;
     }
-
     Button {
       left: 100px;
       &:hover {
         background: #20b1c1;
       }
     }
-
     .botaoMobile {
       display: none;
     }
   }
-
   @media (min-width: 1200px) {
     margin: 0;
     height: 104px;
-
     figure {
       img {
         height: 104px;
         width: 130px;
       }
     }
-
     /* === MENU === */
     nav a {
       font-size: 20px;
@@ -141,5 +76,4 @@ export const HeaderContainer = styled.div`
       padding: 0 15px 0 15px;
     }
   }
-
 `;
