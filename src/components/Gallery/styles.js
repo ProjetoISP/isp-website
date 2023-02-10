@@ -18,4 +18,45 @@ export const GalleryContainer = styled.div`
     color: #fe6c05;
     margin: auto;
   }
+  .container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.slider {
+  display: flex;
+}
+
+.slide {
+  flex: 1;
+}
+
+.slide img {
+  width: 250px;
+  height: 541px;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ddd;
+  color: #333;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin-right: 20px;
+}
+
+button:hover {
+  background-color: #333;
+  color: #fff;
+}
+.controls_left{
+  display: flex;
+  justify-content: space-evenly;
+}
 `;
