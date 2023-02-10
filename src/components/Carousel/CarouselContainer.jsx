@@ -54,7 +54,7 @@ export const CarouselContainer = () => {
   };
 
   return (
-    <div style={{ textAlign: "center" }}>
+    <div style={{ textAlign: "center" }} id="home">
       <Carousel CarouselData={CarouselData} />
     </div>
   );
