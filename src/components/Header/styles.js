@@ -2,59 +2,50 @@ import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
   background-color: white;
-  
   display: flex;
   align-items: center;
-
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
-
   height: 100px;
-  
+
   img {
-      margin-top: 5px;
-
-      width: 113px;
-      height: 90px;
-  }
-  
-  nav a{
-      color: white;
-      font-size: 26px;
-      text-transform: uppercase;
-
-      display: block;
-      padding: 
-      margin-bottom: 10px;
-
-      height: 40px;
+    margin-top: 5px;
+    width: 113px;
+    height: 90px;
   }
 
-  @media(min-width: 800px){
+  nav a {
+    color: white;
+    font-size: 26px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px;
+    height: 40px;
+  }
+
+  @media (min-width: 800px) {
     width: 100vw;
     height: 80px;
-
     background-color: #ffffff;
-    display:flex;
-
+    display: flex;
     align-items: center;
     justify-content: space-evenly;
-  
-    .botaoMobile{
+
+    .botaoMobile {
       display: none;
     }
 
     figure img {
-        height: 77px;
-        width: 100px;
-      }
+      height: 77px;
+      width: 100px;
+    }
 
     nav {
       display: flex;
       align-items: center;
-      justify-content:space-around;
+      justify-content: space-around;
     }
 
     nav a {
@@ -69,22 +60,22 @@ export const HeaderContainer = styled.div`
       height: 20px;
     }
 
-    Button{
+    Button {
       left: 100px;
-      &:hover{
-        background: #20B1C1;
+      &:hover {
+        background: #20b1c1;
       }
     }
 
-    .botaoMobile{
+    .botaoMobile {
       display: none;
     }
   }
 
-  @media(min-width: 1200px) {
+  @media (min-width: 1200px) {
     margin: 0;
     height: 104px;
-    
+
     figure {
       img {
         height: 104px;
@@ -93,12 +84,10 @@ export const HeaderContainer = styled.div`
     }
 
     /* === MENU === */
-    nav a{
-        font-size: 20px;
-        padding-right:;
-        height: 25px;
-        padding: 0 15px 0 15px
+    nav a {
+      font-size: 20px;
+      height: 25px;
+      padding: 0 15px 0 15px;
     }
   }
 `;
-
