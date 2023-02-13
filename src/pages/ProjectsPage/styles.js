@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const ProjectContainer = styled.div`
-  height: 700px auto;
+  height: 750px;
   display: flex;
   flex-direction: column;
-  width: 60vw;
-  margin: auto;
+  width: 70vw;
+  margin: 10px auto;
   text-align: center;
 
   h2 {
@@ -17,77 +17,74 @@ export const ProjectContainer = styled.div`
     line-height: 69px;
     text-align: left;
     color: #fe6c05;
-    margin: auto;
+    margin: 20px auto;
   }
-  .carousel{
+  .carousel {
+    height: 95%;
+    width: 90%;
+    margin: auto;
     display: flex;
     padding: 20px;
-    border: 1px solid #FE6C05;
-
   }
-  img{
 
-      position: relative;
+  button {
+    border: none;
+    background-color: transparent;
+    font-weight: 800;
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
+
+  @media (max-width: 800px) {
+    .carousel {
+      flex-direction: column;
+    }
+    button {
+      display: none;
+    }
+  }
+`;
+
+export const CarouselItem = styled.div`
   width: 100%;
-  height: 171px;
-  object-fit: contain;
+  width: 520px;
+  height: 628px;
+  border-radius: 3px;
+  border: 1px solid #fe6c05;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding: 5px;
 
-    padding: 10px;
-    max-width: 511px;
+  img {
+    object-fit: cover;
+    max-width: 512px;
     max-height: 280px;
-  }
- 
-
-
-
-
-.doeagora{
-  color: white;
-  height: 25px;
-  
-  width: 120px;
-  padding-bottom: 25px;
-  cursor: pointer;
-  
-  background: linear-gradient(180deg, #FE904C 0%, #FF7017 100%);
-  box-shadow: 0px 1.35266px 1.35266px rgba(0, 0, 0, 0.15);
-  border-radius: 3.38166px;
-
-}
-.doeagora p{
-  top: 10px;
-}
-.carousel-item h3{
-  color: #fe6c05;
-}
-
-
-button {
-  margin: 10px;
-  padding: 10px 20px;
-  color: black;
-  font-weight: 800;
-  background-color: transparent;
-  border: none;
-}
-  
- 
-
-
-@media (max-width: 800px) {
-  .carousel {
-    flex-direction: column;
-  }
-  button{
-    display: none;
-  }
-  
+    height: 280px;
   }
 
-  
-.carousel-item {
-    width: 100%;
-  height: auto;
+  h3 {
+    height: 38px;
+    width: 430px;
+    color: #fe6c05;
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38px;
+    text-align: center;
   }
 
+  p {
+    height: 80px;
+    width: 430px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
+  }
 `;
