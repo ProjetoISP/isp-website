@@ -29,10 +29,12 @@ export const ProjectsPage = () => {
   };
 
   return (
-    <ProjectContainer>
+    <ProjectContainer id="project">
       <h2> Projetos </h2>
       <div className="carousel">
-        <button onClick={handleNextClick}>ᐸ</button>
+        <button className="next-btn" onClick={handleNextClick}>
+          ᐸ
+        </button>
         <CarouselItem>
           <img src={images[activeIndex].src} alt={images[activeIndex].title} />
           <h3>{images[activeIndex].title}</h3>
@@ -48,7 +50,9 @@ export const ProjectsPage = () => {
           <p>{images[(activeIndex + 1) % images.length].text}</p>
           <Button>DOE AGORA</Button>
         </CarouselItem>
-        <button onClick={handlePreviousClick}>ᐳ</button>
+        <button className="next-btn" onClick={handlePreviousClick}>
+          ᐳ
+        </button>
       </div>
     </ProjectContainer>
   );

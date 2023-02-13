@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const PartnersContainer = styled.div`
-  height: 700px;
+  height: 800px;
   display: flex;
   flex-direction: column;
-  width: 60vw;
+  width: 70vw;
   margin: auto;
 
   h2 {

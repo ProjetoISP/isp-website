@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const ProjectContainer = styled.div`
-  height: 750px;
+  height: 800px;
   display: flex;
   flex-direction: column;
   width: 70vw;
-  margin: 10px auto;
+  margin: 5px auto;
   text-align: center;
 
   h2 {
@@ -27,9 +27,13 @@ export const ProjectContainer = styled.div`
     padding: 20px;
   }
 
-  button {
+  .next-btn {
     border: none;
+
     background-color: transparent;
+    font-weight: 800;
+    color: #fe6c05;
+    font-size: larger;
     font-weight: 800;
   }
 
@@ -57,7 +61,7 @@ export const CarouselItem = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32px;
+  gap: 35px;
   padding: 5px;
 
   img {
