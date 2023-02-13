@@ -18,4 +18,20 @@ export const PartnersContainer = styled.div`
     color: #fe6c05;
     margin: auto;
   }
+
+  div {
+    display: flex;
+    margin: auto;
+    width: 70%;
+    height: 60%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  img {
+    height: 138px;
+    width: 158px;
+    margin: 20px;
+  }
 `;
