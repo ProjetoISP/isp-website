@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
 export const GalleryContainer = styled.div`
-  height: 700px;
+  height: 600px;
+  min-height: 230px;
   display: flex;
   flex-direction: column;
-  width: 60vw;
+  width: 100%;
   margin: auto;
+  align-items: center;
 
   h2 {
     height: 69px;
@@ -22,41 +24,54 @@ export const GalleryContainer = styled.div`
   max-width: 600px;
   margin: 0 auto;
   text-align: center;
+  
 }
 
 .slider {
-  display: flex;
+display: flex;
+justify-content:center;
+
 }
 
-.slide {
-  flex: 1;
-}
+
 
 .slide img {
-  width: 250px;
-  height: 541px;
+  max-width: 250px;
+  max-height: 541px;
+width: 100%;
+
+height: 100%;
+min-height: 140px;
+  padding: 10px;
 }
 
-.controls {
-  margin-top: 20px;
+.controles {  
+display: flex;
+position: relative;
+justify-content: space-between;
+
+width: 100%;
+
+align-items: center;
+bottom: 50%;
+
+  
 }
 
 button {
+  display: flex;
+  
   padding: 10px 20px;
-  background-color: #ddd;
-  color: #333;
+  background-color: transparent;
+  
+  color: #FE6C05;
   border: none;
-  cursor: pointer;
-  outline: none;
-  margin-right: 20px;
+  font-weight: bold;
+cursor: pointer;
+
+
 }
 
-button:hover {
-  background-color: #333;
-  color: #fff;
-}
-.controls_left{
-  display: flex;
-  justify-content: space-evenly;
-}
+
+
 `;

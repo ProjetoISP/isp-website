@@ -39,6 +39,7 @@ export const Gallery = () => {
 
   return (
     <GalleryContainer>
+      <h2>Galeria</h2>
     <div className="container">
       <div className="slider">
         {images.slice(index, index + 3).map((image, i) => (
@@ -47,9 +48,10 @@ export const Gallery = () => {
           </div>
         ))}
       </div>
+      <div className="controles">  
       <div className="controls_left">
-        <button
-          onClick={() =>
+       
+          <button onClick={() =>
             setIndex(prevIndex => {
               if (prevIndex === 0) {
                 return images.length - 3;
@@ -61,7 +63,8 @@ export const Gallery = () => {
           ᐸ
           
         </button>
-        <button
+        </div>
+        <button className="controls_right"
           onClick={() =>
             setIndex(prevIndex => {
               if (prevIndex + 3 >= images.length) {
@@ -73,8 +76,8 @@ export const Gallery = () => {
         >
          ᐳ
         </button>
-        
-      </div>
+        </div>
+    
       <div className="indicators">
         {images.map((image, i) => (
           <span
