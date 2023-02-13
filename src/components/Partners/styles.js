@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const PartnersContainer = styled.div`
-  height: 800px;
+  height: 700px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 70vw;
   margin: auto;
 
@@ -16,7 +17,7 @@ export const PartnersContainer = styled.div`
     line-height: 69px;
     text-align: left;
     color: #fe6c05;
-    margin: auto;
+    margin: 15px auto;
   }
 
   div {
