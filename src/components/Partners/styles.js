@@ -4,7 +4,8 @@ export const PartnersContainer = styled.div`
   height: 700px;
   display: flex;
   flex-direction: column;
-  width: 60vw;
+  align-items: center;
+  width: 70vw;
   margin: auto;
 
   h2 {
@@ -16,6 +17,22 @@ export const PartnersContainer = styled.div`
     line-height: 69px;
     text-align: left;
     color: #fe6c05;
+    margin: 15px auto;
+  }
+
+  div {
+    display: flex;
     margin: auto;
+    width: 70%;
+    height: 60%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  img {
+    height: 138px;
+    width: 158px;
+    margin: 20px;
   }
 `;
