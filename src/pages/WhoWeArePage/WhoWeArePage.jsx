@@ -60,41 +60,88 @@ export const WhoWeArePage = () => {
       </FirstSection>
 
       <SecondSection>
-        <div>
-          <h2>Missão</h2>
-          <p> Transformar o meio social das comunidades através de ações </p>
-        </div>
-        <div>
-          <h2>Visão</h2>
-          <p>
-            {" "}
-            Ser uma organização social de referência na co-criação de
-            estratégias{" "}
-          </p>
-        </div>
-        <div>
-          <h2> Valores</h2>
-          <p>
-            {" "}
-            Acreditamos e Impulsionamos o individuo a alcançar seus sonhos e
-            objetivos
-          </p>
-        </div>
-      </SecondSection>
-      <ThirdSection>
-        <div>
-          <section>
-            <Button> JUNTE-SE A NÓS</Button>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
-              quo porro asperiores voluptatum a modi doloribus necessitatibus
-              eligendi laboriosam, deserunt incidunt! Ducimus dolor molestiae
-              amet dolores odio, aperiam hic voluptatum!
-            </p>
-            <Button> Doe agora </Button>
+        <section className="section__caracteristicas">
+          <section className="section__caracteristicas--conteiner">
+            <section className="section__caracteristica">
+              <h1 className="caracteristica__titulo">
+                Missão
+              </h1>
+              <p className="caracteristica__paragrafo">
+                Transformar a realidade das comunidades por meio de ações culturais, esportivas e
+                de geração de renda, transmitindo valores coletivos e individuais aos atendidos,
+                bem como conscientizá-los sobre os próprios direitos e deveres na sociedade.
+              </p>
+            </section>
+
+            <section className="section__caracteristica">
+              <h1 className="caracteristica__titulo">
+                Visão
+              </h1>
+              <p className="caracteristica__paragrafo">
+                Ser reconhecida, no âmbito nacional e internacional, como organização
+                de referência na cocriação, promoção e implementação de projetos e estratégias de
+                transformação social.
+              </p>
+            </section>
+
+            <section className="section__caracteristica section__caracteristica--valor">
+              <h1 className="caracteristica__titulo">
+                Valores
+              </h1>
+              <p className="caracteristica__paragrafo caracteristica__paragrafo--valores">
+                <div className="paragrafo--valores">
+                  <span className="valores__titulo">
+                    Coragem:
+                  </span>
+
+                  acreditamos e impulsionamos o indivíduo a sonhar, traçar metas e
+                  alcançar objetivos.
+                </div>
+
+                <div className="paragrafo--valores">
+                  <span className="valores__titulo">
+                    Respeito à Diversidade:
+                  </span>
+
+                  valorizamos cada indivíduo e reconhecemos a pluralidade.
+                  Todos somos únicos, diferentes e singulares.
+                </div>
+                <div className="paragrafo--valores">
+                  <span className="valores__titulo">
+                    Transformação econômica e ambiental:
+                  </span>
+
+                  trabalhamos por uma sociedade mais
+                  humana e justa, e por um mundo melhor para todos, até às próximas gerações.
+                </div>
+              </p>
+            </section>
           </section>
+        </section>
+      </SecondSection>
+
+      <ThirdSection>
+        <div className="conteiner">
+        <img src={image} className="img"></img>
+        <div className="background">
+        <div>
+              <section>
+                <div className="card">
+                  <p className="card--paragrafo">JUNTE-SE A NÓS</p>
+                </div>
+                <p className="paragrafo">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
+                  quo porro asperiores voluptatum a modi doloribus necessitatibus
+                  eligendi laboriosam, deserunt incidunt! Ducimus dolor molestiae
+                  amet dolores odio, aperiam hic voluptatum!
+                </p>
+                <Button> Doe agora </Button>
+              </section>
         </div>
-        <img src={image}></img>
+
+        </div>
+          
+        </div>
       </ThirdSection>
     </MainContainer>
   );
