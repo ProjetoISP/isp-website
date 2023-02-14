@@ -14,7 +14,7 @@ export const FirstSection = styled.section`
       rgba(224, 125, 37, 0.58) 100%
     );
     height: 815px;
-    margin-top: 50px;
+    margin-top: 0px;
   }
 
   iframe {
