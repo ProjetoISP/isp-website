@@ -5,7 +5,10 @@ export const FormStyles = styled.form`
   padding: 10px;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 4px;
+
+  @media (max-width: 767px) {
+  }
 
   .flex-column {
     display: flex;
@@ -33,7 +36,7 @@ export const FormStyles = styled.form`
     text-align: left;
     margin: 5px auto;
 
-    @media (max-width: 425px) {
+    @media (max-width: 767px) {
       font-size: 12px;
       width: 70%;
     }

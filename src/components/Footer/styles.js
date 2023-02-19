@@ -8,8 +8,9 @@ export const FooterContainer = styled.div`
   );
   height: 570px;
 
-  @media (max-width: 425px) {
+  @media (max-width: 767px) {
     min-height: 680px;
+
     width: 100%;
   }
 
