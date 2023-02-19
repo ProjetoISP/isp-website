@@ -1,5 +1,5 @@
-import React from "react";
-import { PartnersContainer } from "./styles.js";
+import { React, useState, useEffect, useRef } from 'react';
+import { PartnersContainer, Item, Inner, CarouselPartners } from "./styles.js";
 import partner1 from "./assets/partner1.png";
 import partner2 from "./assets/partner2.png";
 import partner3 from "./assets/partner3.png";
@@ -7,22 +7,37 @@ import partner4 from "./assets/partner4.png";
 import partner5 from "./assets/partner5.png";
 import partner6 from "./assets/partner6.png";
 import partner7 from "./assets/partner7.png";
-import partner8 from "./assets/partner8.png";
+
+const images = [partner1, partner2, partner3, partner4, partner5, partner6, partner7]
 
 export const Partners = () => {
+
+  const carousel = useRef();
+
+    const [width, setWidth] = useState(0)
+
+    useEffect(() => {
+        setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth)
+    }, [])
+
   return (
     <PartnersContainer>
       <h2> Parceiros </h2>
-      <div>
-        <img src={partner1} alt="" />
-        <img src={partner2} alt="" />
-        <img src={partner3} alt="" />
-        <img src={partner4} alt="" />
-        <img src={partner5} alt="" />
-        <img src={partner6} alt="" />
-        <img src={partner7} alt="" />
-        <img src={partner8} alt="" />
-      </div>
+      <CarouselPartners ref={carousel} whileTap={{ cursor: "grabbing" }}>
+            <Inner
+            drag="x"
+            dragConstraints={{ right: 0, left: -width }}
+            initial={{ x:100 }}
+            animate={{ x:0 }}
+            transition={{ duration:0.8 }}
+            >
+                {images.map(image => (
+                      <Item key={image}>
+                          <img src={image} alt="Parceiros da ISP" />
+                      </Item>
+                ))}
+            </Inner>
+      </CarouselPartners>
     </PartnersContainer>
   );
 };

@@ -19,8 +19,8 @@ export const StyledButton = styled.button`
   @media (max-width: 800px) {
     font-size: 15.3482px;
     height: 23.25px;
-  width: 94.33px;
-  padding-top: 0px;
+    width: 94.33px;
+    padding-top: 0px;
 
 
   }
