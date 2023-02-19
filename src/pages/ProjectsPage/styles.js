@@ -42,8 +42,14 @@ export const ProjectContainer = styled.div`
   }
 
   @media (max-width: 800px) {
+    width: 95vw;
+    height: 90%;
+
     .carousel {
+      display: flex;
       flex-direction: column;
+      align-items: center;
+      width: 90%;
     }
     button {
       display: none;
@@ -90,5 +96,19 @@ export const CarouselItem = styled.div`
     font-weight: 400;
     line-height: 27px;
     text-align: center;
+  }
+
+  @media (max-width: 800px) {
+    width: 50vw;
+    margin: auto;
+    height: 50%;
+
+    img {
+      width: 90%;
+    }
+
+    p {
+      width: 80vw;
+    }
   }
 `;
