@@ -18,7 +18,7 @@ export const GalleryContainer = styled.div`
     line-height: 69px;
     text-align: left;
     color: #fe6c05;
-    margin: auto;
+    margin: 20px auto;
   }
   .container {
     margin: 0 auto;

@@ -99,16 +99,33 @@ export const CarouselItem = styled.div`
   }
 
   @media (max-width: 800px) {
-    width: 50vw;
-    margin: auto;
-    height: 50%;
+    width: 317px;
+    margin: 15px auto;
+    height: 390px;
+    border-radius: 2px;
+
+    h3 {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 23px;
+      width: 200px;
+
+      text-align: left;
+    }
 
     img {
-      width: 90%;
+      width: 95%;
+      height: 171px;
     }
 
     p {
-      width: 80vw;
+      height: 49px;
+      width: 263px;
+      font-family: Poppins;
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 16px;
+      text-align: center;
     }
   }
 `;

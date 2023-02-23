@@ -25,15 +25,6 @@ export const PartnersContainer = styled.div`
     text-align: left;
     color: #fe6c05;
     margin: 20px auto;
-
-    @media (max-width: 768px) {
-      margin: 20px auto 0px auto;
-      font-size: 36px;
-    }
-
-    @media (max-width: 425px) {
-      font-size: 28px;
-    }
   }
 `;
 
