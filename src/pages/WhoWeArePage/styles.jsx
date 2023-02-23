@@ -2,9 +2,7 @@ import styled from "styled-components";
 import background from "../../assets/main-background.svg";
 import backgroundThirdSection from "../../assets/rectangle.png";
 
-export const MainContainer = styled.div`
-
-`;
+export const MainContainer = styled.div``;
 
 export const FirstSection = styled.section`
   .section__empresa {
@@ -206,9 +204,9 @@ export const FirstSection = styled.section`
 `;
 
 export const SecondSection = styled.section`
-    background: rgba(82, 82, 82, 0.9);
-    height: 1012px;
-    width: 100%;
+  background: rgba(82, 82, 82, 0.9);
+  height: 1012px;
+  width: 100%;
 
   .section__caracteristicas {
     opacity: 90%;
@@ -226,8 +224,8 @@ export const SecondSection = styled.section`
   }
 
   .caracteristica__titulo {
-    color: #FE6C05;
-    font-family: 'Poppins', sans-serif;
+    color: #fe6c05;
+    font-family: "Poppins", sans-serif;
     font-size: 32px;
     font-weight: 800;
     line-height: 48px;
@@ -240,7 +238,7 @@ export const SecondSection = styled.section`
 
   .caracteristica__paragrafo {
     color: rgba(245, 245, 245, 0.8);
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-size: 14px;
     font-weight: 800;
     line-height: 27px;
@@ -270,10 +268,9 @@ export const SecondSection = styled.section`
       font-size: 18px;
     }
 
-    .valores__titulo{
+    .valores__titulo {
       padding-right: 5px;
     }
-
   }
 
   @media (min-width: 1200px) {
@@ -286,7 +283,6 @@ export const SecondSection = styled.section`
       display: flex;
       justify-content: space-between;
       margin: auto;
-
       width: 90%;
     }
 
@@ -328,45 +324,45 @@ export const SecondSection = styled.section`
       display: block;
       font-weight: 800;
     }
-    }
+  }
 `;
 
 export const ThirdSection = styled.section`
   width: 100%;
   .img {
-      filter: drop-shadow(0px 0.918332px 0.918332px rgba(0, 0, 0, 0.15));
-      border-radius: 1.3775px;
-      opacity: 40%;
+    filter: drop-shadow(0px 0.918332px 0.918332px rgba(0, 0, 0, 0.15));
+    border-radius: 1.3775px;
+    opacity: 40%;
 
-      height: 182px;
-      width: 100%;
-    }
-  .background{
-  	background: rgba(0, 207, 230, 0.5);
+    height: 182px;
+    width: 100%;
+  }
+  .background {
+    background: rgba(0, 207, 230, 0.5);
     border-radius: 1.3775px;
     box-shadow: 0px 0.918332px 0.918332px rgba(0, 0, 0, 0.15);
-    
+
     height: 158px;
     width: 298px;
     position: relative;
     bottom: 210px;
     left: 30px;
-    div{
+    div {
       background: rgba(245, 245, 245, 0.5);
       box-shadow: 0px 0.918332px 0.918332px rgba(0, 0, 0, 0.15);
       border-radius: 1.3775px;
       text-align: center;
-      
+
       height: 158px;
       width: 290px;
-      section{
-        .card{
-          background: #00CFE6;
-          box-shadow: 13.775px 5.96916px 32.6008px 6.42832px #FF7017;
+      section {
+        .card {
+          background: #00cfe6;
+          box-shadow: 13.775px 5.96916px 32.6008px 6.42832px #ff7017;
           border-radius: 2.29583px;
-          
-          color: #FFFFFF;
-          font-family: 'Roboto';
+
+          color: #ffffff;
+          font-family: "Roboto";
           font-size: 12.8566px;
           font-style: normal;
           font-weight: 600;
@@ -375,105 +371,102 @@ export const ThirdSection = styled.section`
           position: relative;
           top: 17px;
           right: 7px;
-          
+
           height: 25.15px;
           width: 146.93px;
-          .card--paragrafo{
+          .card--paragrafo {
             padding-top: 6px;
           }
-
         }
 
-        .paragrafo{
+        .paragrafo {
           color: #000000;
-          font-family: 'Poppins';
+          font-family: "Poppins";
           font-size: 8.26499px;
           font-style: normal;
           font-weight: 700;
           line-height: 12px;
           text-align: center;
           margin-top: 40px;
-	        margin-bottom: 25px;  
+          margin-bottom: 25px;
         }
 
-      Button{
-        background: linear-gradient(180deg, #FE904C 0%, #FF7017 100%);
-        border-radius: 5px;
-        box-shadow: 0px 2.04911px 2.04911px rgba(0, 0, 0, 0.15);
-        text-transform: uppercase;
-        height: 35.859375px;
-        width: 148.4571075439453px;
-        &:hover{
-          background: #00CFE6;
+        Button {
+          background: linear-gradient(180deg, #fe904c 0%, #ff7017 100%);
+          border-radius: 5px;
+          box-shadow: 0px 2.04911px 2.04911px rgba(0, 0, 0, 0.15);
+          text-transform: uppercase;
+          height: 35.859375px;
+          width: 148.4571075439453px;
+          &:hover {
+            background: #00cfe6;
+          }
         }
       }
     }
   }
-}
 
-	@media (min-width: 640px) {
-          .img {
-        filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.15));
-        border-radius: 3px;
+  @media (min-width: 640px) {
+    .img {
+      filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.15));
+      border-radius: 3px;
 
-        height: 343px;
-
-      }
-    .background{
+      height: 343px;
+    }
+    .background {
       background: rgba(0, 207, 230, 0.5);
       border-radius: 3px;
       box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
-      
+
       height: 343px;
       width: 650px;
       bottom: 440px;
       left: 70px;
 
-      div{
+      div {
         background: rgba(245, 245, 245, 0.5);
         box-shadow: 0px 0.918332px 0.918332px rgba(0, 0, 0, 0.15);
-        border-radius: 3px 0px 0px 3px;  
+        border-radius: 3px 0px 0px 3px;
 
         height: 343px;
         width: 635px;
-       
-        section{
-          .card{
-            background: #00CFE6;
-            box-shadow: 30px 13px 71px 14px #FF7017;
+
+        section {
+          .card {
+            background: #00cfe6;
+            box-shadow: 30px 13px 71px 14px #ff7017;
             border-radius: 5px;
-            
+
             font-size: 28px;
             /* margin: 37px 16px 0 55px; */
 
             top: 37px;
             right: 16px;
             margin-bottom: 55px;
-            
+
             height: 55px;
             width: 320px;
-            .card--paragrafo{
+            .card--paragrafo {
               padding-top: 20px;
-            }            
-
+            }
           }
 
-          .paragrafo{
+          .paragrafo {
             font-size: 18px;
             line-height: 27px;
             margin-top: 70px;
-	          margin-bottom: 40px;
+            margin-bottom: 40px;
           }
 
-        Button{
-          font-size: 20px;
+          Button {
+            font-size: 20px;
+          }
         }
       }
     }
   }
-  } 
-	@media (min-width: 1200px) {
-		.conteiner{
+  @media (min-width: 1200px) {
+    .conteiner {
       display: flex;
       align-items: center;
       justify-content: space-around;
@@ -484,28 +477,27 @@ export const ThirdSection = styled.section`
 
       width: 90%;
       .img {
-          width: 450px;
-          opacity: 100%;
-        }
-      .background{
-        background: #00CFE6;
+        width: 450px;
+        opacity: 100%;
+      }
+      .background {
+        background: #00cfe6;
         position: static;
-        div{
-          background: #F5F5F5;
+        div {
+          background: #f5f5f5;
           border-radius: 3px 0px 0px 3px;
-        
-          section{
-            .card{
-              box-shadow: 20px 10px 55px #FF7017;
+
+          section {
+            .card {
+              box-shadow: 20px 10px 55px #ff7017;
             }
 
-            .paragrafo{
-              color: #1E1E1E;
+            .paragrafo {
+              color: #1e1e1e;
               font-size: 18px;
             }
-
-        }}
-        
+          }
+        }
       }
     }
   }

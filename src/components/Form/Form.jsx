@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { FormStyles } from "./styles";
+
 export const Form = () => {
   const formSchema = yup.object().shape({
     name: yup.string().required("Nome obrigatório"),

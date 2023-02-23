@@ -42,8 +42,14 @@ export const ProjectContainer = styled.div`
   }
 
   @media (max-width: 800px) {
+    width: 95vw;
+    height: 90%;
+
     .carousel {
+      display: flex;
       flex-direction: column;
+      align-items: center;
+      width: 90%;
     }
     button {
       display: none;
@@ -90,5 +96,36 @@ export const CarouselItem = styled.div`
     font-weight: 400;
     line-height: 27px;
     text-align: center;
+  }
+
+  @media (max-width: 800px) {
+    width: 317px;
+    margin: 15px auto;
+    height: 390px;
+    border-radius: 2px;
+
+    h3 {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 23px;
+      width: 200px;
+
+      text-align: left;
+    }
+
+    img {
+      width: 95%;
+      height: 171px;
+    }
+
+    p {
+      height: 49px;
+      width: 263px;
+      font-family: Poppins;
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 16px;
+      text-align: center;
+    }
   }
 `;

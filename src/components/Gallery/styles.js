@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const GalleryContainer = styled.div`
-  height: 800px;
+  height: 750px;
   min-height: 230px;
   display: flex;
   flex-direction: column;
@@ -18,7 +18,7 @@ export const GalleryContainer = styled.div`
     line-height: 69px;
     text-align: left;
     color: #fe6c05;
-    margin: auto;
+    margin: 20px auto;
   }
   .container {
     margin: 0 auto;
@@ -63,5 +63,20 @@ export const GalleryContainer = styled.div`
     border: none;
     font-weight: bold;
     cursor: pointer;
+  }
+
+  @media (max-width: 767px) {
+    height: 500px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+
+    h2 {
+      margin: 10px auto;
+    }
+
+    .container {
+      width: 80vw;
+    }
   }
 `;
