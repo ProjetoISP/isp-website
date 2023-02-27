@@ -35,7 +35,7 @@ export const CarouselContainer = () => {
     data: data,
     time: 2000,
     width: "2440px",
-    width: "2440px",
+
     height: "500px",
     captionStyle: captionStyle,
     radius: "10px",
@@ -48,8 +48,8 @@ export const CarouselContainer = () => {
     slideImageFit: "cover",
     showNavBtn: true,
     style: {
-      textAlign: "center",
-      maxWidth: "1440px",
+      textAlign: "top",
+      maxWidth: "100vw",
     },
   };
 
