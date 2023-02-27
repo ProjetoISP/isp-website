@@ -1,21 +1,16 @@
 import GlobalStyle from "./styles/global";
-import { Header } from "./components/Header/Header";
-import { Footer } from "./components/Footer/Footer";
-import { WhoWeArePage } from "./pages/WhoWeArePage/WhoWeArePage";
-import { PresentationPage } from "./pages/PresentationPage/PresentationPage";
-import { GalleryPage } from "./pages/GalleryPage/GalleryPage";
-import { ProjectsPage } from "./pages/ProjectsPage/ProjectsPage";
+import { Routes, Route } from "react-router-dom";
+import { DashboardPage } from "./pages/DashboardPage/DashboardPage";
+import { NotFoundPage } from "./pages/NotFoundPage/NotFoundPage";
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      <Header />
-      <PresentationPage />
-      <WhoWeArePage />
-      <ProjectsPage />
-      <GalleryPage />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<DashboardPage />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
     </>
   );
 }
