@@ -34,7 +34,7 @@ export const CarouselContainer = () => {
   const CarouselData = {
     data: data,
     time: 2000,
-    width: "2440px",
+    width: "100%",
 
     height: "500px",
     captionStyle: captionStyle,
